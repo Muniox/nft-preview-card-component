@@ -1,0 +1,140 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-size: 18px;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0d192b;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.preview-card {
+  width: 365px;
+  background-color: #14253d;
+  border-radius: 15px;
+}
+
+.preview-card__hero-image {
+  display: block;
+  width: 85%;
+  margin: 27.375px auto;
+  border-radius: 5px;
+}
+
+.preview-card__main {
+  width: 85%;
+  margin: 0 auto;
+  border-bottom: 1px solid #2f415b;
+  padding-bottom: 15px;
+}
+
+.preview-card__title {
+  font-size: 23px;
+  margin: 5px 0;
+}
+
+.preview-card__description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #8bacda;
+  margin: 10px 0;
+}
+
+.preview-card__stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.preview-card__tracking {
+  color: #00fff7;
+  padding-left: 20px;
+}
+
+.preview-card__tracking::before {
+  content: url(../images/icon-ethereum.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.preview-card__end-time {
+  color: #8bacda;
+}
+
+.preview-card__end-time::before {
+  content: url(../images/icon-clock.svg);
+  position: absolute;
+  top: 0;
+  right: 90px;
+}
+
+.preview-card__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85%;
+  margin: 10px auto;
+}
+
+.preview-card__author-image {
+  display: block;
+  height: 40px;
+}
+
+.preview-card__author-name {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
