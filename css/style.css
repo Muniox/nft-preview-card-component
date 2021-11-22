@@ -116,7 +116,7 @@ body::after {
       -ms-flex-align: center;
           align-items: center;
   width: 85%;
-  margin: 10px auto;
+  margin: 27.375px auto;
 }
 
 .preview-card__author-image {
@@ -124,12 +124,20 @@ body::after {
   height: 40px;
 }
 
-.preview-card__author-name {
+.preview-card__author-info {
   padding-left: 20px;
   font-size: 16px;
+  font-weight: 300;
+  color: #8bacda;
+}
+
+.preview-card__author-name {
+  font-weight: 300;
+  color: white;
 }
 
 .attribution {
+  margin-top: 15px;
   font-size: 11px;
   text-align: center;
 }

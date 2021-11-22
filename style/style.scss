@@ -97,7 +97,7 @@ body::after {
     display: flex;
     align-items: center;
     width: 85%;
-    margin: 10px auto;
+    margin: 27.375px auto;
   }
 
   &__author-image {
@@ -115,13 +115,21 @@ body::after {
   //     width: 40px;
   //   }
 
-  &__author-name {
+  &__author-info {
     padding-left: 20px;
     font-size: 16px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+  }
+
+  &__author-name {
+    font-weight: 300;
+    color: hsl(0, 0%, 100%);
   }
 }
 
 .attribution {
+  margin-top: 15px;
   font-size: 11px;
   text-align: center;
 }
