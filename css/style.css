@@ -1,4 +1,6 @@
-/* colors */
+/* Primary colors */
+/* Neutral colors */
+/*************************************************/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -20,7 +22,7 @@ body::after {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #0d192b;
+  background-color: #14253d;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -45,7 +47,7 @@ body::after {
 
 .preview-card {
   width: 325px;
-  background-color: #14253d;
+  background-color: #0d192b;
   border-radius: 15px;
 }
 
@@ -91,7 +93,8 @@ body::after {
   font-size: 15px;
 }
 
-.preview-card__stats-img {
+.preview-card__tracking::before {
+  content: url(../images/icon-ethereum.svg);
   position: relative;
   top: 3px;
   padding-right: 5px;
@@ -100,6 +103,13 @@ body::after {
 .preview-card__end-time {
   color: #8bacda;
   font-size: 15px;
+}
+
+.preview-card__end-time::before {
+  content: url(../images/icon-ethereum.svg);
+  position: relative;
+  top: 3px;
+  padding-right: 5px;
 }
 
 .preview-card__author {
