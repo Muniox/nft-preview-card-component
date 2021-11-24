@@ -106,7 +106,7 @@ body::after {
 }
 
 .preview-card__end-time::before {
-  content: url(../images/icon-ethereum.svg);
+  content: url(../images/icon-clock.svg);
   position: relative;
   top: 3px;
   padding-right: 5px;
