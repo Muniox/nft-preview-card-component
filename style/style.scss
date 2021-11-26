@@ -16,6 +16,9 @@ $white: hsl(0, 0%, 100%);
 }
 
 body {
+  display: grid;
+  justify-content: center;
+  align-content: center;
   position: relative;
   font-size: 18px;
   min-height: 100vh;
@@ -35,15 +38,15 @@ body::after {
   z-index: -1;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
+// .container {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: 100vh;
+// }
 
-.preview-card {
+.nft-card {
   width: 325px;
   background-color: $very-dark-blue-main;
   border-radius: 15px;
