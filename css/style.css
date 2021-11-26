@@ -56,8 +56,13 @@ body::after {
 }
 
 .nft-card__title {
+  display: inline-block;
   font-size: 21px;
-  margin: 5px 0;
+}
+
+.nft-card__title:hover {
+  color: #00fff7;
+  cursor: pointer;
 }
 
 .nft-card__description {
@@ -129,6 +134,11 @@ body::after {
 .nft-card__author-name {
   font-weight: 300;
   color: white;
+}
+
+.nft-card__author-name:hover {
+  color: #00fff7;
+  cursor: pointer;
 }
 
 .attribution {

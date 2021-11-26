@@ -66,8 +66,13 @@ body::after {
   }
 
   &__title {
+    display: inline-block;
     font-size: 21px;
-    margin: 5px 0;
+  }
+
+  &__title:hover {
+    color: $cyan;
+    cursor: pointer;
   }
 
   &__description {
@@ -131,6 +136,11 @@ body::after {
   &__author-name {
     font-weight: 300;
     color: hsl(0, 0%, 100%);
+  }
+
+  &__author-name:hover {
+    color: $cyan;
+    cursor: pointer;
   }
 }
 
