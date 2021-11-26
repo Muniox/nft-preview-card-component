@@ -19,7 +19,6 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  position: relative;
   font-size: 18px;
   min-height: 100vh;
   width: 100%;
@@ -38,28 +37,61 @@ body::after {
   z-index: -1;
 }
 
-// .container {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   min-height: 100vh;
-// }
-
 .nft-card {
   width: 325px;
   background-color: $very-dark-blue-main;
   border-radius: 15px;
+  padding: 24px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 24px;
+
+  &__image-container {
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &__image-container::before {
+    content: '';
+    //position absolute, żeby zajął cały kontener
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $cyan;
+    opacity: 0;
+    z-index: 5;
+    transition: opacity 1s;
+  }
+
+  &__image-container:hover::before {
+    opacity: 0.5;
+  }
+
+  &__eye-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 10;
+  }
+
+  &__image-container:hover &__eye-image {
+    opacity: 1;
+  }
 
   &__hero-image {
     display: block;
-    width: 85%;
-    margin: 22.5px auto;
-    border-radius: 5px;
+    width: 100%;
+    // margin: 22.5px auto;
+    // border-radius: 5px;
   }
 
   &__main {
-    width: 85%;
     margin: 0 auto;
     border-bottom: 1px solid hsl(215, 32%, 27%);
     padding-bottom: 15px;
@@ -116,8 +148,6 @@ body::after {
   &__author {
     display: flex;
     align-items: center;
-    width: 85%;
-    margin: 22.5px auto;
   }
 
   &__author-image {
