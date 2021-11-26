@@ -38,7 +38,7 @@ body::after {
 }
 
 .nft-card {
-  width: 325px;
+  max-width: 325px;
   background-color: $very-dark-blue-card;
   border-radius: 15px;
   padding: 24px;
@@ -100,11 +100,11 @@ body::after {
   &__title {
     display: inline-block;
     font-size: 21px;
+    cursor: pointer;
   }
 
   &__title:hover {
     color: $cyan;
-    cursor: pointer;
   }
 
   &__description {
@@ -166,11 +166,11 @@ body::after {
   &__author-name {
     font-weight: 300;
     color: hsl(0, 0%, 100%);
+    cursor: pointer;
   }
 
   &__author-name:hover {
     color: $cyan;
-    cursor: pointer;
   }
 }
 
