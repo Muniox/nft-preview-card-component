@@ -15,18 +15,22 @@ $white: hsl(0, 0%, 100%);
   padding: 0;
 }
 
+:root {
+  font-size: 62.5%;
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   display: grid;
   justify-content: center;
   align-content: center;
-  font-size: 18px;
   min-height: 100vh;
-  width: 100%;
   color: $white;
   font-family: 'Outfit', sans-serif;
 }
 
-body::after {
+body::before {
   content: '';
   position: absolute;
   top: 0;
@@ -38,18 +42,21 @@ body::after {
 }
 
 .nft-card {
-  max-width: 325px;
+  margin: 0 5%;
+  transition: margin 1s;
+  max-width: 35rem;
   background-color: $very-dark-blue-card;
-  border-radius: 15px;
-  padding: 24px;
+  border-radius: 1.5rem;
+  padding: 2.4rem;
   display: flex;
   flex-flow: column nowrap;
-  gap: 24px;
+  gap: 2.4rem;
+  min-height: 300px;
 
   &__image-container {
     position: relative;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     overflow: hidden;
     cursor: pointer;
   }
@@ -63,7 +70,7 @@ body::after {
     background: $cyan;
     opacity: 0;
     z-index: 5;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
   }
 
   &__image-container:hover::before {
@@ -76,8 +83,9 @@ body::after {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
     z-index: 10;
+    width: 4.8rem;
   }
 
   &__image-container:hover &__eye-image {
@@ -87,20 +95,18 @@ body::after {
   &__hero-image {
     display: block;
     width: 100%;
-    // margin: 22.5px auto;
-    // border-radius: 5px;
   }
 
   &__main {
-    margin: 0 auto;
-    border-bottom: 1px solid hsl(215, 32%, 27%);
-    padding-bottom: 15px;
+    border-bottom: 0.1rem solid hsl(215, 32%, 27%);
+    padding-bottom: 1.5rem;
   }
 
   &__title {
     display: inline-block;
-    font-size: 21px;
+    font-size: 2.2rem;
     cursor: pointer;
+    transition: color 0.5s;
   }
 
   &__title:hover {
@@ -108,11 +114,11 @@ body::after {
   }
 
   &__description {
-    font-size: 15px;
+    font-size: 1.8rem;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 2.5rem;
     color: hsl(215, 51%, 70%);
-    margin: 10px 0;
+    margin: 1.8rem 0;
   }
 
   &__stats {
@@ -123,26 +129,30 @@ body::after {
 
   &__tracking {
     color: hsl(178, 100%, 50%);
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 
   &__tracking::before {
-    content: url(../images/icon-ethereum.svg);
+    content: '';
+    background-image: url(../images/icon-ethereum.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     position: relative;
-    top: 3px;
-    padding-right: 5px;
+    padding-right: 1.8rem;
   }
 
   &__end-time {
     color: hsl(215, 51%, 70%);
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 
   &__end-time::before {
-    content: url(../images/icon-clock.svg);
+    content: '';
+    background-image: url(../images/icon-clock.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     position: relative;
-    top: 3px;
-    padding-right: 5px;
+    padding-right: 2.3rem;
   }
 
   &__author {
@@ -151,14 +161,14 @@ body::after {
   }
 
   &__author-image {
-    height: 33px;
-    border: 1px solid hsl(0, 0%, 100%);
+    height: 3.3rem;
+    border: 0.1rem solid hsl(0, 0%, 100%);
     border-radius: 50%;
   }
 
   &__author-info {
-    padding-left: 20px;
-    font-size: 15px;
+    padding-left: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     color: hsl(215, 51%, 70%);
   }
@@ -167,6 +177,7 @@ body::after {
     font-weight: 300;
     color: hsl(0, 0%, 100%);
     cursor: pointer;
+    transition: color 0.5s;
   }
 
   &__author-name:hover {
@@ -175,10 +186,50 @@ body::after {
 }
 
 .attribution {
-  margin-top: 15px;
-  font-size: 11px;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  .nft-card {
+    margin: 0;
+    max-width: 35rem;
+  }
+}
+
+/******************************************/
+/*           IE Hacks   no-RWD            */
+/******************************************/
+
+_:-ms-lang(x),
+.ie10up,
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+_:-ms-lang(x),
+.ie10up,
+.nft-card__main {
+  padding: 1.5rem 0;
+  margin-bottom: 2.4rem;
+}
+
+_:-ms-lang(x),
+.ie10up,
+.nft-card {
+  min-height: 580px;
+}
+
+_:-ms-lang(x),
+.ie10up,
+.nft-card__image-container {
+  min-height: 267px;
 }
