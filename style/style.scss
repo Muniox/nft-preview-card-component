@@ -17,6 +17,7 @@ $white: hsl(0, 0%, 100%);
 
 :root {
   font-size: 62.5%;
+  font-size: 100%;
   position: relative;
   min-height: 100%;
 }
@@ -107,6 +108,7 @@ body::before {
     font-size: 2.2rem;
     cursor: pointer;
     transition: color 0.5s;
+    line-height: 3rem;
   }
 
   &__title:hover {

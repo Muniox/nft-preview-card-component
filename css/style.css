@@ -10,6 +10,7 @@
 
 :root {
   font-size: 62.5%;
+  font-size: 100%;
   position: relative;
   min-height: 100%;
 }
@@ -114,6 +115,7 @@ body::before {
   cursor: pointer;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
+  line-height: 3rem;
 }
 
 .nft-card__title:hover {
