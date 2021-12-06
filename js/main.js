@@ -7,6 +7,6 @@ const rootFontSize = document.documentElement;
 
 // rootFontSize.style.fontSize =
 
-normalSize.addEventListener('click', () => { rootFontSize.style.fontSize = "62.5%" });
-biggerSize.addEventListener('click', () => { rootFontSize.style.fontSize = "80%" });
-biggestSize.addEventListener('click', () => { rootFontSize.style.fontSize = "100%" });
+normalSize.addEventListener('click', function() { rootFontSize.style.fontSize = "62.5%" });
+biggerSize.addEventListener('click', function() { rootFontSize.style.fontSize = "80%" });
+biggestSize.addEventListener('click', function() { rootFontSize.style.fontSize = "100%" });
