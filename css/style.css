@@ -40,7 +40,7 @@ body::before {
   z-index: -1;
 }
 
-.font-sizer2 {
+.font-sizer {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,17 +52,17 @@ body::before {
   padding: 2rem 4rem;
 }
 
-.font-sizer2__info {
+.font-sizer__info {
   font-size: 1.8rem;
 }
 
-.font-sizer2__list {
+.font-sizer__list {
   display: inline-block;
   text-align: center;
   list-style-type: none;
 }
 
-.font-sizer2__list-item {
+.font-sizer__list-item {
   display: inline-block;
   padding: 1rem 0.5rem;
   font-weight: 700;
@@ -70,27 +70,27 @@ body::before {
   cursor: pointer;
 }
 
-.font-sizer2__list-item--normal {
+.font-sizer__list-item--normal {
   font-size: 1.5rem;
 }
 
-.font-sizer2__list-item--normal:hover {
+.font-sizer__list-item--normal:hover {
   text-decoration: underline;
 }
 
-.font-sizer2__list-item--bigger {
+.font-sizer__list-item--bigger {
   font-size: 1.7rem;
 }
 
-.font-sizer2__list-item--bigger:hover {
+.font-sizer__list-item--bigger:hover {
   text-decoration: underline;
 }
 
-.font-sizer2__list-item--biggest {
+.font-sizer__list-item--biggest {
   font-size: 2rem;
 }
 
-.font-sizer2__list-item--biggest:hover {
+.font-sizer__list-item--biggest:hover {
   text-decoration: underline;
 }
 
