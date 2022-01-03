@@ -280,7 +280,7 @@ body::before {
 _:-ms-lang(x),
 .ie10up,
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -301,12 +301,12 @@ _:-ms-lang(x),
 _:-ms-lang(x),
 .ie10up,
 .nft-card {
-  min-height: 580px;
+  min-height: 58rem;
 }
 
 _:-ms-lang(x),
 .ie10up,
 .nft-card__image-container {
-  min-height: 267px;
+  min-height: 26.7rem;
 }
 /*# sourceMappingURL=style.css.map */

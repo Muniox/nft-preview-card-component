@@ -259,7 +259,7 @@ body::before {
 _:-ms-lang(x),
 .ie10up,
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
