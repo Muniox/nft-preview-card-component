@@ -257,6 +257,12 @@ body::before {
 /******************************************/
 
 _:-ms-lang(x),
+.ie10up, :root {
+  display: flex;
+  flex-direction: column;
+}
+
+_:-ms-lang(x),
 .ie10up,
 body {
   min-height: 100vh;

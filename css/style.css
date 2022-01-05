@@ -278,6 +278,14 @@ body::before {
 /*           IE Hacks   no-RWD            */
 /******************************************/
 _:-ms-lang(x),
+.ie10up, :root {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+_:-ms-lang(x),
 .ie10up,
 body {
   min-height: 100vh;
