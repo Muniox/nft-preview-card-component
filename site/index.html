@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script src="./js/main.js" async defer></script>
+  </head>
+  <body>
+    <section class="font-sizer">
+      <div class="font-sizer__info">Please set font size</div>
+      <ul class="font-sizer__list">
+        <li
+          class="font-sizer__list-item font-sizer__list-item--normal"
+          id="normal-size"
+        >
+          A
+        </li>
+        <li
+          class="font-sizer__list-item font-sizer__list-item--bigger"
+          id="bigger-size"
+        >
+          A
+        </li>
+        <li
+          class="font-sizer__list-item font-sizer__list-item--biggest"
+          id="biggest-size"
+        >
+          A
+        </li>
+      </ul>
+    </section>
+    <section class="nft-card">
+      <div class="nft-card__image-container">
+        <img
+          class="nft-card__hero-image"
+          src="./images/image-equilibrium.jpg"
+          alt="Equilibrium"
+        />
+        <img
+          class="nft-card__eye-image"
+          src="./images/icon-view.svg"
+          alt="eye-image"
+        />
+      </div>
+      <div class="nft-card__main">
+        <h2 class="nft-card__title">Equilibrium #3429</h2>
+        <p class="nft-card__description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+
+        <div class="nft-card__stats">
+          <div class="nft-card__tracking">0.041 ETH</div>
+          <div class="nft-card__end-time">3 days left</div>
+        </div>
+      </div>
+      <div class="nft-card__author">
+        <img
+          class="nft-card__author-image"
+          src="./images/image-avatar.png"
+          alt="image-avatar"
+        />
+        <div class="nft-card__author-info">
+          Creation of
+          <span class="nft-card__author-name">Jules Wyvern</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/Muniox">Muniox</a>.
+    </div>
+  </body>
+</html>
