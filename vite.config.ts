@@ -4,7 +4,7 @@ import legacy from '@vitejs/plugin-legacy'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // root: './',
+  base: 'https://muniox.github.io/nft-preview-card-component/',
   css: {
     devSourcemap: true,
   },
