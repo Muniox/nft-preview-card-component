@@ -185,7 +185,7 @@ body::before {
 
   &__tracking::before {
     content: '';
-    background-image: url(./icon-ethereum.svg);
+    background-image: url(assets/icon-ethereum.svg);
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
@@ -199,7 +199,7 @@ body::before {
 
   &__end-time::before {
     content: '';
-    background-image: url(./icon-clock.svg);
+    background-image: url(assets/icon-clock.svg);
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
