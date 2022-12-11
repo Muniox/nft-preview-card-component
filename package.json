@@ -2,7 +2,7 @@
   "name": "nft-preview-card-component",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://muniox.github.io/nft-preview-card-component/",
+  "homepage": "https://muniox.github.io/nft-preview-card-component/docs",
   "type": "module",
   "scripts": {
     "dev": "vite",
